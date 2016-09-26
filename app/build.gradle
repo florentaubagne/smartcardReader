@@ -19,8 +19,6 @@ android {
         //   http://tools.android.com/tech-docs/new-build-system/user-guide
         release {
             minifyEnabled true
-            //shrinkResources true
-            
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }

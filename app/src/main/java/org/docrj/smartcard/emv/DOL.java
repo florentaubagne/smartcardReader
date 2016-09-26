@@ -55,6 +55,7 @@ import java.util.List;
  * The Terminal constructs the response, which contains only the VALUES for these tags.
  *
  * TODO: check DOL processing on page 55
+ * commit check flo
  */
 public class DOL {
 

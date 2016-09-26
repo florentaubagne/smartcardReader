@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "org.docrj.smartcard.reader"
+
+        versionCode 141
+        versionName "1.4.1"
+
+        minSdkVersion 19
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        // debug and release property defaults are described here:
+        //   http://tools.android.com/tech-docs/new-build-system/user-guide
+        release {
+            minifyEnabled true
+            //shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.github.clans:fab:1.4.0'
+    compile('com.github.afollestad.material-dialogs:core:0.8.5.3@aar') {
+        transitive = true
+    }
+    // androidTestCompile, debugCompile, releaseCompile here
+}

@@ -1,0 +1,14 @@
+# IntelliJ IDEA
+.idea
+
+# Gradle
+.gradle
+build
+local.properties
+reports
+
+# Windows
+Thumbs.db
+
+# Mac OS
+.DS_Store

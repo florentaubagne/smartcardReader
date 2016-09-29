@@ -137,6 +137,7 @@ public class PaymentReaderXcvr extends ReaderXcvr {
     }
 
     private boolean selectApp(String aid, EMVApp app) throws TagLostException, IOException {
+        // Test from ubuntu
         Log.d(TAG, "select app: " + aid);
         byte[] aidBytes = Util.hexToBytes(aid);
         ResponseApdu rspApdu = sendAndRcv(new SelectApdu(aidBytes), true);
